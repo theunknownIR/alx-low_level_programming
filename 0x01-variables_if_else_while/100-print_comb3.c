@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//trial and error
 
 int main(void)
 {
