@@ -1,31 +1,20 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * print_string - prints a string to the console
- * @str: the input string to print
- *
- * Return: none
- */
-void print_string(char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-		{
-		_putchar(str[i]);
-		i++;
-		}
-}
-
-/**
- * main - Entry point of the program
- *
- * Return: 0 (Success)
- */
+*main - function prints text as output
+*
+*Return:return 0
+*/
 int main(void)
 {
-	char str[] = "_putchar\n";
+	char word[10] = "_putchar";
 
-	print_string(str);
+	int i;
+
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(word[i]);
+	}
+	_putchar(10);
 	return (0);
 }
